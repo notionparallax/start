@@ -22,6 +22,7 @@ git config --global user.name "Ben Doherty"
 git config --global user.email "ben@notionparallax.co.uk"
 git config --global credential.helper cache #cache password for 15 minutes
 git config --global color.ui auto #colour the output in git
-git config --global core.editor "subl"
+git config --global core.editor "subl" #TODO this freaks out a bit, "Aborting commit due to empty commit message." not sure how to fix yet.
+
 
 sudo apt-get upgrade -y
