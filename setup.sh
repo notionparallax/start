@@ -6,7 +6,7 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
 
 #install things
-sudo apt-get install sublime-text-installer git r-base chromium-browser gdebi-core libapparmor1 sl
+sudo apt-get install sublime-text-installer git r-base chromium-browser gdebi-core libapparmor1 sl curl
 
 #install things that aren't on PPAs
 #probably ought to put these downloads somewhere more tidy than home.
@@ -14,6 +14,7 @@ sudo apt-get install sublime-text-installer git r-base chromium-browser gdebi-co
 wget http://download1.rstudio.org/rstudio-0.98.484-amd64.deb
 sudo gdebi rstudio-0.98.484-amd64.deb
 #RVM
+curl -sSL https://get.rvm.io | bash -s stable --rails --ruby
 
 #settings
 #git
