@@ -9,7 +9,8 @@ sudo apt-get update
 
 #install things
 sudo apt-get install sublime-text-installer git r-base chromium-browser gdebi-core libapparmor1 \
-                     sl curl python-bs4 python-html5lib python-pip virtualbox mysql-workbench google-chrome-stable
+                     sl curl python-bs4 python-html5lib python-pip virtualbox mysql-workbench \
+                     google-chrome-stable bundler
 
 #install things that aren't on PPAs
 #probably ought to put these downloads somewhere more tidy than home.
@@ -28,11 +29,11 @@ sudo apt-get install rubygems build-essential
 #node and npm
 curl -sL https://deb.nodesource.com/setup | sudo bash -
 sudo apt-get install -y nodejs
-
+sudo npm install -g bower
 
 #settings
 #git
-git config --global user.name "Ben Doherty"
+git config --global user.name  "Ben Doherty"
 git config --global user.email "ben@notionparallax.co.uk"
 git config --global credential.helper cache #cache password for 15 minutes
 git config --global color.ui auto #colour the output in git
@@ -41,9 +42,3 @@ git config --global core.editor "subl" #TODO this freaks out a bit, "Aborting co
 sudo apt-get upgrade -y
 
 sudo gem update --system
-
-git clone https://github.com/bvn-architecture/transformative.git
-git clone https://github.com/bvn-architecture/shackleton.git
-git clone https://github.com/bvn-architecture/FuturesForum.git
-git clone https://github.com/notionparallax/ShadowWolf.git
-git clone https://github.com/notionparallax/start.git
