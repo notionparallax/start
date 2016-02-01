@@ -5,14 +5,6 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
-sudo apt-get update
-
-#install things
-sudo apt-get install sublime-text-installer git r-base chromium-browser \
-                     gdebi-core libapparmor1 sl curl python-bs4 python-html5lib \
-                     python-pip virtualbox mysql-workbench google-chrome-stable \
-                     inkscape wget samba
-
 #install things that aren't on PPAs
 #probably ought to put these downloads somewhere more tidy than home.
 #rstudio
@@ -23,12 +15,44 @@ wget -qO- https://get.docker.com/ | sh
 
 #RVM
 curl -sSL https://get.rvm.io | bash -s stable --rails --ruby
-sudo apt-get install rubygems build-essential
-
 
 #node and npm
 curl -sL https://deb.nodesource.com/setup | sudo bash -
-sudo apt-get install -y nodejs
+
+sudo apt-get update
+
+#install things
+sudo apt-get install arduino \
+                     blender \
+                     build-essential \
+                     bundler \
+                     cups \
+                     curl \
+                     fdupes \
+                     gdebi-core \
+                     git \
+                     golang \
+                     google-chrome-stable \
+                     imagemagick \
+                     inkscape \
+                     ipython \
+                     libapparmor1 \
+                     mysql-workbench \
+                     nodejs \
+                     parted
+                     python-bs4 \
+                     python-html5lib \
+                     python-pip \
+                     r-base \
+                     rstudio \
+                     ruby \
+                     rubygems \
+                     samba \
+                     skype \
+                     sl \
+                     sublime-text-installer \
+                     virtualbox \
+                     wget
 
 
 #settings
