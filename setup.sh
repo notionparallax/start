@@ -5,6 +5,8 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3 #sublime text
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-add-repository ppa:git-core/ppa #latest git
+sudo add-apt-repository ppa:webupd8team/java 
+sudo apt-add-repository ppa:paolorotolo/android-studio
 #latest ruby
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:brightbox/ruby-ng
@@ -28,7 +30,7 @@ sudo apt-get update
 
 #install things
 #I know you can install these things all in one command, but I'm hoping that many commands will be more robust to failure
-sudo apt-get install arduino 
+#sudo apt-get install arduino 
 sudo apt-get install blender 
 sudo apt-get install build-essential 
 sudo apt-get install bundler 
@@ -41,7 +43,6 @@ sudo apt-get install golang
 sudo apt-get install google-chrome-stable 
 sudo apt-get install imagemagick 
 sudo apt-get install inkscape 
-sudo apt-get install ipython 
 sudo apt-get install libapparmor1 
 sudo apt-get install mysql-workbench 
 sudo apt-get install nodejs 
@@ -49,6 +50,7 @@ sudo apt-get install part
 sudo apt-get install python-bs4 
 sudo apt-get install python-html5lib 
 sudo apt-get install python-pip 
+sudo apt-get install ipython 
 sudo apt-get install r-base 
 sudo apt-get install rstudio 
 sudo apt-get install ruby2.3  #check version wanted here: https://www.brightbox.com/docs/ruby/ubuntu/ 
@@ -60,11 +62,24 @@ sudo apt-get install sl
 sudo apt-get install sublime-text-installer 
 sudo apt-get install virtualbox 
 sudo apt-get install wget
+sudo apt-get install xvfb
+sudo apt-get install unzip
+sudo apt-get install oracle-java8-installer
+sudo apt-get install android-studio
 
 #gems
 sudo gem install 'github-pages'
 sudo gem install scss_lint
 
+#pip
+sudo pip install pyvirtualdisplay selenium
+
+wget -N http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+chmod +x chromedriver
+sudo mv -f chromedriver /usr/local/share/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 
 #settings
 #git
