@@ -5,7 +5,7 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-3 #sublime text
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-add-repository ppa:git-core/ppa #latest git
-sudo add-apt-repository ppa:webupd8team/java 
+sudo add-apt-repository ppa:webupd8team/java
 sudo apt-add-repository ppa:paolorotolo/android-studio
 #latest ruby
 sudo apt-get install software-properties-common
@@ -30,42 +30,43 @@ sudo apt-get update
 
 #install things
 #I know you can install these things all in one command, but I'm hoping that many commands will be more robust to failure
-#sudo apt-get install arduino 
-sudo apt-get install blender 
-sudo apt-get install build-essential 
-sudo apt-get install bundler 
-sudo apt-get install cups 
-sudo apt-get install curl 
-sudo apt-get install fdupes 
-sudo apt-get install gdebi-core 
-sudo apt-get install git 
-sudo apt-get install golang 
-sudo apt-get install google-chrome-stable 
-sudo apt-get install imagemagick 
-sudo apt-get install inkscape 
-sudo apt-get install libapparmor1 
-sudo apt-get install mysql-workbench 
-sudo apt-get install nodejs 
-sudo apt-get install part 
-sudo apt-get install python-bs4 
-sudo apt-get install python-html5lib 
-sudo apt-get install python-pip 
-sudo apt-get install ipython 
-sudo apt-get install r-base 
-sudo apt-get install rstudio 
-sudo apt-get install ruby2.3  #check version wanted here: https://www.brightbox.com/docs/ruby/ubuntu/ 
+#sudo apt-get install arduino
+sudo apt-get install blender
+sudo apt-get install build-essential
+sudo apt-get install bundler
+sudo apt-get install cups
+sudo apt-get install curl
+sudo apt-get install fdupes
+sudo apt-get install gdebi-core
+sudo apt-get install git
+sudo apt-get install golang
+sudo apt-get install google-chrome-stable
+sudo apt-get install imagemagick
+sudo apt-get install inkscape
+sudo apt-get install libapparmor1
+sudo apt-get install mysql-workbench
+sudo apt-get install nodejs
+sudo apt-get install part
+sudo apt-get install python-bs4
+sudo apt-get install python-html5lib
+sudo apt-get install python-pip
+sudo apt-get install ipython
+sudo apt-get install r-base
+sudo apt-get install rstudio
+sudo apt-get install ruby2.3  #check version wanted here: https://www.brightbox.com/docs/ruby/ubuntu/
 sudo apt-get install ruby2.3-dev #numbers must match above
-sudo apt-get install rubygems 
-sudo apt-get install samba 
-sudo apt-get install skype 
-sudo apt-get install sl 
-sudo apt-get install sublime-text-installer 
-sudo apt-get install virtualbox 
+sudo apt-get install rubygems
+sudo apt-get install samba
+sudo apt-get install skype
+sudo apt-get install sl
+sudo apt-get install sublime-text-installer
+sudo apt-get install virtualbox
 sudo apt-get install wget
 sudo apt-get install xvfb
 sudo apt-get install unzip
 sudo apt-get install oracle-java8-installer
-sudo apt-get install android-studio
+# sudo apt-get install android-studio
+sudo apt-get install pylint
 
 #gems
 sudo gem install 'github-pages'
